@@ -5,14 +5,19 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+
+      # Step 1: Get latest code from GitHub
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # Step 2: Connect GitHub Actions to AWS
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -20,14 +25,28 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Deploy to S3
+      # Step 3: Verify portfolio files exist
+      - name: Verify Portfolio Files
         run: |
-          aws s3 sync . s3://husnain-portfolio --delete \
-            --exclude ".git/*" \
-            --exclude ".github/*"
+          echo "Checking portfolio directory..."
+          ls -la portfolio
+          echo "Checking index.html..."
+          test -f portfolio/index.html
 
+      # Step 4: Deploy website files to S3
+      - name: Deploy Portfolio to S3
+        run: |
+          aws s3 sync "./portfolio" "s3://husnain-portfolio" \
+            --delete
+
+      # Step 5: Invalidate CloudFront cache
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation \
             --distribution-id E1MCT7ODXGTZMO \
             --paths "/*"
+
+      # Step 6: Deployment success message
+      - name: Deployment Complete
+        run: |
+          echo "Portfolio deployed successfully!"
