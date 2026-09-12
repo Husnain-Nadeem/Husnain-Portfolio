@@ -1,230 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Husnain Nadeem — Cloud, DevOps & Computer Science Portfolio" />
-  <title>Husnain Nadeem | Cloud & DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Husnain Nadeem | Cloud • DevOps • CS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow"></div>
+<div class="glow"></div>
+<nav><a class="brand" href="#home"><b>HN</b> HUSNAIN.DEV</a><div class="links"><a href="#projects">Projects</a><a href="#research">Research</a><a href="#training">Training</a><a href="#documents">CV</a><a href="#contact">Contact</a></div><span class="online">● SYSTEM ONLINE</span></nav>
 
-  <header class="nav">
-    <a href="#home" class="brand"><span>&lt;/&gt;</span> HUSNAIN<span>.</span></a>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#journey">Journey</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-button" href="https://github.com/Husnain-Nadeem" target="_blank">GitHub ↗</a>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-grid"></div>
-      <div class="orb orb-one"></div><div class="orb orb-two"></div>
-
-      <div class="hero-content">
-        <div class="status"><span class="pulse"></span> AVAILABLE FOR CLOUD & DEVOPS OPPORTUNITIES</div>
-        <p class="eyebrow">BS COMPUTER SCIENCE STUDENT • PAKISTAN</p>
-        <h1>Building software.<br><span>Deploying possibilities.</span></h1>
-        <p class="hero-text">
-          I am <strong>Husnain Nadeem</strong>, a Computer Science student focused on
-          Cloud, DevOps, AWS, automation and cloud-native systems.
-        </p>
-        <div class="training-badge">
-          <span class="pulse-dot"></span>
-          <div><small>CURRENTLY ENROLLED</small><strong>HCCDP – Solution Architectures</strong><em>Cloud Developer Professional • 6-Month Training</em><span>Center for Skills, Faisalabad</span></div>
-        </div>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">Explore My Work <span>↓</span></a>
-          <a href="#resume" class="btn ghost">Resume & CV</a>
-        </div>
-
-        <div class="tool-strip">
-          <span>WORKING WITH</span>
-          <div class="tools">
-            <b title="AWS">AWS</b><b title="Docker">Docker</b><b title="Kubernetes">K8s</b>
-            <b title="Terraform">Terraform</b><b title="GitHub">GitHub</b><b title="Linux">Linux</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile-panel">
-        <div class="profile-ring"></div>
-        <div class="profile-card">
-          <!-- Replace the src below with your own professional photo when ready -->
-          <img src="https://github.com/Husnain-Nadeem.png?size=600" alt="Husnain Nadeem" />
-          <div class="profile-overlay"></div>
-          <div class="profile-label">
-            <small align="right">ENGINEERING PROFILE</small>
-            <strong align="right">---------  &star;Husnain Nadeem</strong>
-            <span align="right">Cloud • DevOps • CS</span>
-          </div>
-        </div>
-        <div class="floating-card terminal-card">
-          <div class="terminal-top"><i></i><i></i><i></i><span>deployment.log</span></div>
-          <p><span>$</span> git push origin main</p>
-          <p class="success">✓ pipeline triggered</p>
-          <p class="success">✓ build successful</p>
-          <p class="success">✓ deployed to cloud</p>
-        </div>
-      </div>
-
-      <div class="scroll-indicator"><span></span> SCROLL TO EXPLORE</div>
-    </section>
-
-    <section id="projects" class="section projects-section">
-      <div class="section-heading">
-        <div><p class="eyebrow">// SELECTED WORK</p><h2>Things I've <span>built & learned.</span></h2></div>
-        <p class="section-copy">Each project represents a step in my journey from software development toward cloud infrastructure and DevOps engineering.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card featured" data-project="cicd">
-          <div class="project-number">01</div>
-          <div class="project-icon">∞</div>
-          <div class="card-meta"><span>CI/CD</span><span>JENKINS • ARGOCD • AWS</span></div>
-          <h3>CI/CD Automation Pipeline</h3><div class="guided-label">HANDS-ON IMPLEMENTATION</div>
-          <p>Automating source-to-deployment workflows using version control, containers and cloud services.</p>
-          <button class="open-project">Inspect pipeline <span>↗</span></button>
-          <div class="pipeline-mini"><i></i><i></i><i></i><i></i></div>
-        </article>
-
-        <article class="project-card" data-project="terraform">
-          <div class="project-number">02</div><div class="project-icon">▧</div>
-          <div class="card-meta"><span>IaC</span><span>CLOUDFORMATION • TERRAFORM • AWS</span></div>
-          <h3>Infrastructure as Code</h3>
-          <p>Hands-on Infrastructure as Code using AWS CloudFormation, while expanding into Terraform and reusable cloud infrastructure.</p>
-          <button class="open-project">View architecture <span>↗</span></button>
-        </article>
-
-        <article class="project-card" data-project="kubernetes">
-          <div class="project-number">03</div><div class="project-icon">◉</div>
-          <div class="card-meta"><span>ORCHESTRATION</span><span>KUBERNETES • EKS</span></div>
-          <h3>Kubernetes & Amazon EKS Deployment</h3>
-          <p>Hands-on Kubernetes and Amazon EKS deployments using containers, manifests, Helm, ingress and cloud-native workflows.</p>
-          <button class="open-project">Explore cluster <span>↗</span></button>
-        </article>
-
-        <article class="project-card" data-project="docker">
-          <div class="project-number">04</div><div class="project-icon">⬡</div>
-          <div class="card-meta"><span>CONTAINERS</span><span>DOCKER • LINUX</span></div>
-          <h3>Containerized Applications</h3>
-          <p>Building Docker images and creating portable environments for application delivery.</p>
-          <button class="open-project">Open workflow <span>↗</span></button>
-        </article>
-
-        <article class="project-card" data-project="iot">
-          <div class="project-number">05</div><div class="project-icon">⌁</div>
-          <div class="card-meta"><span>IoT</span><span>ESP32 • MQTT</span></div>
-          <h3>Smart IoT Automation</h3>
-          <p>ESP32-based automation with sensors, relays, MQTT communication and cloud-connected controls.</p>
-          <button class="open-project">See system <span>↗</span></button>
-        </article>
-
-        <article class="project-card coming">
-          <div class="project-number">NEXT</div><div class="project-icon">+</div>
-          <h3>Your next deployment?</h3>
-          <p>This portfolio itself is designed to become a live cloud project with automated CI/CD deployment.</p>
-        </article>
-      </div>
-    </section>
-
-
-    <section class="section training-section">
-      <div class="training-card">
-        <div class="training-code">HCCDP</div>
-        <div class="training-info">
-          <p class="eyebrow">// CURRENT PROFESSIONAL TRAINING</p>
-          <h2>HCCDP – <span>Solution Architectures.</span></h2>
-          <p>Currently enrolled in the <strong>Cloud Developer Professional</strong> program, a six-month professional training focused on cloud solution architecture and practical cloud engineering.</p>
-          <div class="training-details"><span>☁ Cloud Developer Professional</span><span>◈ Solution Architectures</span><span>⌛ 6-Month Training</span><span>⌖ Center for Skills, Faisalabad</span></div>
-        </div>
-      </div>
-    </section>
-    <section id="journey" class="section journey-section">
-      <div class="section-heading">
-        <div><p class="eyebrow">// ENGINEERING JOURNEY</p><h2>Learning by <span>building.</span></h2></div>
-      </div>
-      <div class="journey">
-        <div class="journey-line"></div>
-        <div class="journey-item active">
-          <span class="journey-dot"></span><div><small>FOUNDATION</small><h3>Computer Science</h3><p>Programming, algorithms, systems and software engineering fundamentals.</p></div>
-        </div>
-        <div class="journey-item">
-          <span class="journey-dot"></span><div><small>BUILD</small><h3>Python, Git & Linux</h3><p>Developing software while learning version control and Linux-based workflows.</p></div>
-        </div>
-        <div class="journey-item">
-          <span class="journey-dot"></span><div><small>PACKAGE</small><h3>Docker & Containers</h3><p>Moving from local applications toward portable, reproducible deployments.</p></div>
-        </div>
-        <div class="journey-item">
-          <span class="journey-dot"></span><div><small>PROVISION</small><h3>AWS & Terraform</h3><p>Exploring cloud infrastructure and Infrastructure as Code.</p></div>
-        </div>
-        <div class="journey-item">
-          <span class="journey-dot"></span><div><small>ORCHESTRATE</small><h3>Kubernetes & CI/CD</h3><p>Building toward cloud-native deployment automation and DevOps practices.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section skills-section">
-      <p class="eyebrow">// TOOLBOX</p>
-      <div class="skills-cloud">
-        <span>AWS</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>Git</span>
-        <span>Jenkins</span><span>Linux</span><span>Python</span><span>CI/CD</span><span>EKS</span>
-        <span>Helm</span><span>Argo CD</span><span>MQTT</span><span>ESP32</span><span>Cloud Architecture</span><span>CloudFormation</span>
-      </div>
-    </section>
-
-    <section id="resume" class="section resume-section">
-      <div class="resume-card">
-        <div class="resume-content">
-          <p class="eyebrow">// PROFESSIONAL DOCUMENTS</p>
-          <h2>My journey,<br><span>on paper.</span></h2>
-          <p>Explore my concise resume for recruiters or open my detailed CV for projects, education and technical work.</p>
-          <div class="resume-actions document-actions">
-            <a href="assets/Husnain_Nadeem_Resume.pdf" class="btn primary" target="_blank">View Resume ↗</a>
-            <a href="assets/Husnain_Nadeem_Resume.pdf" class="btn ghost" download>Download Resume ↓</a>
-            <a href="assets/Husnain_Nadeem_CV.pdf" class="btn primary alt" target="_blank">View CV ↗</a>
-            <a href="assets/Husnain_Nadeem_CV.pdf" class="btn ghost" download>Download CV ↓</a>
-          </div>
-        </div>
-        <div class="resume-visual">
-          <div class="paper">
-            <div class="paper-head"><div class="paper-avatar">HN</div><div><b>HUSNAIN NADEEM</b><small>Cloud & DevOps Enthusiast</small></div></div>
-            <div class="paper-line big"></div><div class="paper-line"></div><div class="paper-line"></div>
-            <div class="paper-grid"><div></div><div></div><div></div></div>
-            <div class="paper-line"></div><div class="paper-line short"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <p class="eyebrow">// LET'S CONNECT</p>
-      <h2>Let's build something<br><span>that ships.</span></h2>
-      <div class="contact-links">
-        <a href="mailto:mhusnainscoper123@gmail.com">Email <span>↗</span></a>
-        <a href="https://www.linkedin.com/in/husnain-nadeem-81046a287/" target="_blank">LinkedIn <span>↗</span></a>
-        <a href="https://github.com/Husnain-Nadeem" target="_blank">GitHub <span>↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer><span>© 2026 HUSNAIN NADEEM</span><span>DESIGNED AS A CLOUD-NATIVE PORTFOLIO</span></footer>
-
-  <div class="project-modal" id="projectModal">
-    <div class="modal-backdrop"></div>
-    <div class="modal">
-      <button class="close-modal">×</button>
-      <div id="modalContent"></div>
-    </div>
+<section id="home" class="hero">
+<div><p class="eyebrow">CLOUD / DEVOPS / COMPUTER SCIENCE</p><h1>Building cloud systems.<br><span>Breaking them.</span><br>Learning from both.</h1>
+<p class="lead">I'm <b>Husnain Nadeem</b> — a BS Computer Science student building hands-on experience across AWS, CI/CD, Jenkins, Kubernetes, Infrastructure as Code and cloud-native systems.</p>
+<div class="buttons"><a class="btn" href="#projects">Explore Work ↓</a><a class="btn ghost" target="_blank" href="https://github.com/Husnain-Nadeem">GitHub ↗</a><a class="btn ghost" target="_blank" href="https://www.linkedin.com/in/husnain-nadeem-81046a287/">LinkedIn ↗</a></div>
+<div class="training-mini"><i></i><div><small>CURRENTLY ENROLLED</small><b>HCCDP – Solution Architectures</b><span>Cloud Developer Professional • 6-month training • Center for Skills, Faisalabad</span></div></div></div>
+<div class="visual"><div class="ring"></div>
+<div class="photo" id="photoBox">
+  <div class="photo-stage">
+    <img id="heroImg" src="https://github.com/Husnain-Nadeem.png?size=700" alt="Husnain Nadeem">
+    <canvas id="particleCanvas"></canvas>
   </div>
+  <div class="reticle" id="reticle"></div>
+  <div class="hero-modes">
+    <button data-mode="off" class="active">Photo</button>
+    <button data-mode="bat">Bat Mode</button>
+    <button data-mode="core">Iron Mode</button>
+  </div>
+</div>
+<div class="identity"><small>ENGINEERING PROFILE</small><b>Husnain Nadeem</b><span>Cloud • DevOps • CS</span></div>
+<div class="float aws">☁ AWS</div><div class="float docker">◉ Docker</div><div class="float k8s">☸ Kubernetes</div>
+<div class="terminal"><header>● ● ● <span>deployment.log</span><b>LIVE</b></header><div id="log"></div></div></div></section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="ticker">GIT PUSH　→　CI　→　BUILD　→　TEST　→　DEPLOY　→　CLOUD　→　OBSERVE　→　REPEAT</div>
+
+<section id="projects"><div class="head"><div><p class="eyebrow">// SELECTED WORK</p><h2>Projects that <span>actually run.</span></h2></div><p>Move your cursor over a card, then click it. The site turns the technical workflow into an interactive story.</p></div>
+<div class="grid">
+<article class="reveal" data-p="portfolio"><label>01 / FLAGSHIP</label><h3>Cloud DevOps Portfolio</h3><p>This website itself — a static portfolio designed as a Cloud/DevOps project with automated deployment architecture.</p><div class="tags">HTML · CSS · JS · AWS · CI/CD</div><b>OPEN WORKFLOW ↗</b></article>
+<article class="reveal" data-p="cicd"><label>02 / CI-CD</label><h3>CI/CD Automation</h3><p>AWS-native CI/CD plus Jenkins and ArgoCD workflows practiced through hands-on DevOps implementations.</p><div class="tags">Jenkins · ArgoCD · Docker · AWS</div><b>OPEN WORKFLOW ↗</b></article>
+<article class="reveal" data-p="research"><label>03 / RESEARCH</label><h3>Cloud Network Performance Benchmark</h3><p>EC2-to-EC2 AWS inter-region research using iperf3 to measure latency, jitter, packet loss, throughput and retransmissions.</p><div class="tags">EC2 · iperf3 · Python · Networking</div><b>OPEN RESEARCH ↗</b></article>
+<article class="reveal" data-p="k8s"><label>04 / CONTAINERS</label><h3>Kubernetes & Amazon EKS</h3><p>Hands-on Kubernetes deployment covering manifests, services, ingress, Helm and EKS.</p><div class="tags">Kubernetes · EKS · Helm · Ingress</div><b>OPEN WORKFLOW ↗</b></article>
+<article class="reveal" data-p="iac"><label>05 / IaC</label><h3>Infrastructure as Code</h3><p>AWS CloudFormation work with YAML templates, plus continued Terraform learning.</p><div class="tags">CloudFormation · Terraform · AWS</div><b>OPEN WORKFLOW ↗</b></article>
+<article class="reveal" data-p="iot"><label>06 / EMBEDDED</label><h3>Smart IoT Automation</h3><p>ESP32 smart-home automation using sensors, relays and MQTT communication.</p><div class="tags">ESP32 · MQTT · IoT</div><b>OPEN PROJECT ↗</b></article>
+</div></section>
+
+<section id="research"><div class="head"><div><p class="eyebrow">// RESEARCH SNAPSHOT</p><h2>What happens when <span>cloud regions</span> talk?</h2></div><p>A reproducible AWS measurement project across two regions — full breakdown, same card format as the work above.</p></div>
+<div class="research-card reveal" data-p="research">
+  <div>
+    <label>07 / RESEARCH DEEP DIVE</label>
+    <h3>Cloud Network Performance Benchmark</h3>
+    <p>I built a reproducible AWS measurement project using EC2 instances in <b>us-east-1</b> and <b>us-west-2</b>. The repository contains automated collection, analysis, figures and reports — 308 east→west and 191 west→east iperf3 measurements, with measured throughput asymmetry and higher east→west retransmissions.</p>
+    <span class="tags">EC2 · iperf3 · Python · Networking · pandas · matplotlib</span>
+    <a class="btn" target="_blank" href="https://github.com/Husnain-Nadeem/cloud-network-performance-benchmark">View Research ↗</a>
+  </div>
+  <div class="metrics">
+    <div><small>LATENCY</small><b>~56 ms</b><span>round trip</span></div>
+    <div><small>JITTER</small><b>~1.2–1.3 ms</b><span>both directions</span></div>
+    <div><small>THROUGHPUT</small><b>441 vs 337</b><span>Mbps average</span></div>
+    <div><small>PACKET LOSS</small><b>0%</b><span>observed</span></div>
+  </div>
+</div>
+</section>
+
+<section id="training"><div class="training reveal"><strong>HCCDP</strong><div><p class="eyebrow">// CURRENT PROFESSIONAL TRAINING</p><h2>HCCDP – <span>Solution Architectures.</span></h2><p>Currently enrolled in the <b>Cloud Developer Professional</b> program — a six-month training focused on solution architecture and practical cloud engineering.</p><div class="pills">Cloud Developer Professional · Solution Architectures · 6-Month Training · Center for Skills, Faisalabad</div></div></div></section>
+
+<section id="documents"><div class="head"><div><p class="eyebrow">// ENGINEERING DOCUMENTS</p><h2>Take the <span>long version.</span></h2></div></div><div class="docs">
+<div class="doc-card reveal">
+  <a class="doc-cover" href="assets/Husnain_Nadeem_Resume.pdf" target="_blank" aria-label="Open resume PDF"></a>
+  <h3>Resume</h3><p>Concise professional overview. Click anywhere on this card to open it.</p>
+  <div class="doc-actions"><a class="btn" href="assets/Husnain_Nadeem_Resume.pdf" download>Download ↓</a> <a class="btn ghost" href="assets/Husnain_Nadeem_Resume.pdf" target="_blank">Open PDF ↗</a></div>
+</div>
+<div class="doc-card reveal">
+  <a class="doc-cover" href="assets/Husnain_Nadeem_CV.pdf" target="_blank" aria-label="Open CV PDF"></a>
+  <h3>Curriculum Vitae</h3><p>Detailed academic and technical profile. Click anywhere on this card to open it.</p>
+  <div class="doc-actions"><a class="btn" href="assets/Husnain_Nadeem_CV.pdf" download>Download ↓</a> <a class="btn ghost" href="assets/Husnain_Nadeem_CV.pdf" target="_blank">Open PDF ↗</a></div>
+</div>
+</div></section>
+
+<footer id="contact"><p class="eyebrow">// LET'S CONNECT</p><h2>Build something.<br><span>Measure it.</span><br>Ship it.</h2>
+<div class="connect-buttons">
+  <a class="cbtn primary" href="mailto:mhusnainscoper123@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>Email</a>
+  <a class="cbtn" target="_blank" href="https://www.linkedin.com/in/husnain-nadeem-81046a287/"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zM8.28 8.25h4.31v2.01h.06c.6-1.13 2.06-2.33 4.24-2.33 4.54 0 5.38 2.99 5.38 6.87V23h-4.5v-6.68c0-1.6-.03-3.65-2.23-3.65-2.23 0-2.57 1.74-2.57 3.53V23h-4.5V8.25z"/></svg>LinkedIn</a>
+  <a class="cbtn" target="_blank" href="https://github.com/Husnain-Nadeem"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.42.36.78 1.08.78 2.17v3.22c0 .3.21.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub</a>
+  <a class="cbtn" target="_blank" href="https://lnkd.in/p/dmHtjmnh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Portfolio Post</a>
+</div>
+<small>© 2026 Husnain Nadeem · HTML · CSS · JavaScript · AWS</small></footer>
+
+<div id="modal"><div class="box"><button id="close">×</button><p id="me" class="eyebrow"></p><h2 id="mt"></h2><em id="ms"></em><p id="mx"></p><div id="flow"></div><div id="ml"></div></div></div>
+<script src="script.js"></script></body></html>
